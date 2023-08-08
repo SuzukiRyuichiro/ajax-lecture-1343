@@ -7,11 +7,13 @@ const signUp = () => {
   // make a request to the API with those values
   const url = "https://reqres.in/api/register";
 
+  // Create a user object which we will convert in to JSON later
   const user = {
     email: email,
     password: password,
   };
 
+  // Provide context to the request
   const requestOption = {
     method: "POST",
     headers: { "Content-Type": "application/json" },
